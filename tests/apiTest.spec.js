@@ -10,7 +10,7 @@ test('Get Single User API Test', async () => {
 
 })
 
-test.only('Get Multiple Users API Test', async () => {
+test('Get Multiple Users API Test', async () => {
   const apiContext = await request.newContext()
   const response = await apiContext.get('https://reqres.in/api/users?page=2')
   expect(response.status()).toBe(200)
